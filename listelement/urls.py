@@ -8,4 +8,4 @@ route.register('element',ElementViewSet)
 route.register('category',CategoryViewSet)
 route.register('type',TypeViewSet)
 
-urlpatterns = route.urls
+urlpatterns = route.urls 
