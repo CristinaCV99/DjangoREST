@@ -38,6 +38,6 @@ class TypeViewSet(viewsets.ModelViewSet):
 
     @action(detail=True, methods=['get'])
     def elements(self, request, pk=None):
-        queryset = Element.objects.filter(type_id=pk)
+        queryset = Element.objects.filter(type_id=pk )
         serializer = ElementSerializer(queryset, many=True)
         return Response(serializer.data)
